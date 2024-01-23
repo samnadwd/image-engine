@@ -326,7 +326,7 @@ footer .container .call-footer {
     font-size: 15px;
   }
   .fullScreenEl img {
-    width: 50%;
+    width: 100%;
     height: fit-content;
   }
   footer .container {
