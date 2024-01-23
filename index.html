@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="imgs/main logo.png" alt="img" /></a>
+    </header>
+
+    <div class="img-slideshow">
+      <div class="container">
+        <ion-icon
+          name="caret-back-outline"
+          onclick="scrollFunc(-1)"
+          class="backBtn"
+        ></ion-icon>
+        <div class="slide active">
+          <h1 class="description">Search For <span>Any Photos</span></h1>
+          <img src="imgs/img3.jpg" alt="img" width="100px" />
+        </div>
+        <div class="slide">
+          <h1 class="description">Search For <span>Creativity</span></h1>
+          <img src="imgs/img1.jpg" alt="img" width="100px" />
+        </div>
+        <div class="slide">
+          <h1 class="description">Search For <span>Choices</span></h1>
+          <img src="imgs/img2.jpg" alt="img" width="100px" />
+        </div>
+        <ion-icon
+          name="caret-forward-outline"
+          onclick="scrollFunc(1)"
+          class="forwardBtn"
+        ></ion-icon>
+        <div class="dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="searchInputSection">
+      <div class="container">
+        <input type="text" placeholder="Search ..." />
+        <button type="button">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-results-section">
+      <div class="alert">
+        <p>Nothing has been found!</p>
+      </div>
+      <div class="loading-animation"></div>
+      <div class="container">
+        <!-- search result photos go here -->
+        <!-- random generated photos go here -->
+      </div>
+      <div class="pageIndicator">
+        <button class="prev"><ion-icon name="arrow-undo-outline"></ion-icon></button>
+        <button class="next"><ion-icon name="arrow-redo-outline"></ion-icon></button>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="container">
+        <a href="index.html"><img src="imgs/main logo.png" alt="img" /></a>
+        <p class="call-footer">Created Using Unsplash API</p>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
